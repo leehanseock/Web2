@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td><label for="username">이름</label></td>
+                <!-- "username"을 위한 라벨 설정 -->
+                <td><input type="text" name="username" id="username"></td>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td>
+                    <input type="radio" name="gender" value="m" id="male"><label for="male">남성</label>
+                    <input type="radio" name="gender" value="f" id="female"><label for="female">여성</label>
+                    <!-- value는 입력한 값을 전송되는 값을 정하는 것 
+                    남성을 선택하면 "m"이 여성을 선택하면 "f"가 전송-->
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="가입"></td>
+                <!-- submit같은 버튼타입은 value값이 버튼위에 적히게 됨 -->
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
