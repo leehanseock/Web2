@@ -11,10 +11,24 @@
         h1:active{
             color:red;
         }
+
+        input:enabled{
+            background:pink;
+        }
+        input:disabled{
+            background:red;
+        }
+        input:focus{
+            background:orange;
+        }
     </style>
 </head>
 <body>
     <h1>반응 선택자</h1>
-
+    <form action="">
+        사용 가능: <input type="text" size="20"><br><br>
+        사용 불가능: <input type="text" size="20" disabled="사용금지!"><br><br>
+    </form>
+    
 </body>
 </html>
