@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin : 0;
+            padding : 0;
+        }
+        body{
+            width : 960px;
+            margin: 0 auto;/*위 아래 여백은 없애고, 좌우 여백은 자동으로 설정*/
+            overflow: hidden;
+        }
+        #menu{
+            width: 260px;
+            float : left;
+        }
+        #section{
+            width: 700px;
+            float: right;
+        }
+        li{
+            list-style:none;
+        }
+        /*미디어 쿼리 적용*/
+        /*소형 디바이스인 경우 스타일*/
+        @media screen and (max-width : 767px){
+            body {width:auto}
+            #menu {width:auto; float: none;}
+            #section {width: auto;float: none;}
+        }
+
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li>🙊메뉴1</li>
+            <li>🙉메뉴2</li>
+            <li>🙈메뉴3</li>
+        </ul>
+    </div>
+    <div id="section">
+        <h1>반응형 웹 패턴1(왼쪽 메뉴가 위쪽으로 이동)</h1>
+        <p>Dolor sit amet consectetur adipisicing elit. Unde quas in omnis culpa consequuntur id ducimus magni ipsam! Tempore, rerum laudantium? Veniam voluptatem eligendi labore tenetur dolorem voluptatum delectus quaerat.
+            Nam assumenda tempora sit? Dolores aliquid voluptate natus similique quo quisquam sed est officia commodi eos. Facilis doloremque pariatur rerum maiores sed!
+            Totam, accusamus iure. Tenetur, voluptatum repellat. Ex saepe corporis doloribus amet, dicta soluta harum omnis odit. Accusantium porro quod perspiciatis assumenda enim.
+            Eveniet rerum error amet, nostrum quo quisquam recusandae est accusamus dolor, dolore vero, eius inventore tempora maiores dicta aperiam veniam perferendis voluptatibus.
+            Dolorum, fuga minima? Inventore voluptates nostrum eveniet esse pariatur molestiae, perspiciatis reiciendis soluta quasi dolorem ut fugit quas illum, eum minus nam.
+            Alias repudiandae saepe error animi quod iusto ratione, provident id autem nostrum nesciunt odit aliquam dolores officiis repellendus corrupti tenetur, inventore totam.
+            Assumenda error eligendi magni obcaecati, modi voluptatem esse, tenetur dolores ipsam, nihil unde commodi sequi consectetur quam iure debitis ex quo. Laudantium.
+            Ducimus eveniet quisquam deserunt nobis corporis libero aliquam asperiores quibusdam voluptatibus? Tempore sapiente nesciunt perspiciatis officia suscipit repellendus quibusdam ipsam enim at!
+            Labore quos quibusdam illum! Doloremque necessitatibus autem voluptas aliquid et, porro sed explicabo at, impedit similique eius corrupti, natus qui perferendis soluta.
+        </p>
+    </div>
+</body>
+</html>
