@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @media screen {
+        @media screen and (orientation : portrait){
             body{
                 background-color: tan;
             }
+            h1{
+                color:cornflowerblue;
+            }
         }
 
-        @media print{/*인쇄할 때 CSS 다르게 지정 가능*/
+        @media screen and (orientation : landscape){
             body{
-                background-color: papayawhip;
+                background-color: salmon;
+            }
+            h1{
+                color:aliceblue;
             }
         }
     </style>
