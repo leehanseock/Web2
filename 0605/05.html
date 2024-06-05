@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let nowDate = new Date();
+        let hours = nowDate.getHours();
+        let result = ''; //'' : emptyString으로 초기화
+        if(hours<5) result = '더 자라';
+        else if(hours<7) result = '준비해라'; // 5이상 7미만
+        else if(hours<9) result = '등교해라';
+        else if(hours<12) result = '열심히 수업 들어라';
+        else if(hours<14) result = '밥 먹어라';
+        else result = '오후 수업 듣고 집에 가라';
+        
+        alert(result);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
