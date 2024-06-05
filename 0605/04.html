@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+            // 실습문제 
+            // 1. prompt를 이용해 출생연도를 입력받아서 나이를 구하기(date객체 생성해서 GetYear이용)
+            // 2. if-else 문을 사용해서 나이가 19세 이하면 '청소년', 20세 이상이면 '성인'이라고 출력
+            let date = new Date();
+            let year = date.getFullYear();
+            let birthYear = parseInt(prompt('출생연도를 입력해라','ex. 2001'));
+            let age = year - birthYear + 1;
+            if (age <= 19){
+                result = '청소년';
+            }
+            else result = '성인';
+
+            alert('당신의 나이는 '+age+'세이므로 당신은 '+result+'입니다');
+    </script>
+</head>
+<body>
+</body>
+</html>
