@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Log</title>
+    <style>
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./source/font/HelveticaLTStd-BlkObl.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'CustomFont2';
+    src: url('./source/font/HelveticaLTStd-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'CustomFont3';
+    src: url('./source/font/HelveticaLTStd-Blk.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    width : 1400px;
+    margin: 0 auto;
+    background-color: #519BB6;
+        }
+#container{
+    position: absolute;
+    top:10%;
+}
+#top {
+    width:1400px;
+    margin-left:10%;
+    font-family:'CustomFont', sans-serif;
+    letter-spacing: -5px;
+    font-size: 8em;
+    color:black;
+}
+#bottom{ 
+    float:left; width:700px; 
+    font-family:'CustomFont', sans-serif;
+    letter-spacing: -1px;
+    font-size: 1.4em;
+    color:white;
+    margin-top:-37px;
+    margin-left:210px;
+    }
+
+.showbox{
+    /* 색상 및 크기 적용 */
+    width: 850px; height:450px;
+    background: white;
+
+    /*위치 설정*/
+    position:absolute;
+    left:30%; top:55%;
+    margin-left:-350px;
+    margin-top:-210px;
+    padding:11px 51px 31px 51px;
+    overflow-y:scroll;
+}
+
+.showbox h1 {
+    font-family: 'CustomFont', sans-serif;
+    text-decoration : underline;
+    }
+
+.showbox p {
+    font-family: 'CustomFont2', sans-serif;
+    }
+
+#menu {
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    right: 17%;
+    bottom: 30%;
+    background-color: rgba(255, 255, 255, 0.456);
+    background-image: url('./source/menubg.jpg');
+    background-size: cover;
+    background-blend-mode: overlay;
+    font-family: 'CustomFont3', sans-serif;
+    font-size: 2em;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid white;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: -1px;
+    display: block; 
+    width: 100%; 
+    text-align: center; 
+    margin: -15px 0;
+}
+
+@media (max-width: 800px) {
+    #top {
+        font-size: 6vw; 
+    }
+    .showbox {
+        height: 40vh; 
+    }
+    #menu {
+        font-size: 1.5em;
+        height: 25vh;
+    }
+}
+
+@media (max-width: 600px) {
+    #top {
+        font-size: 4vw; 
+    }
+    .showbox {
+        height: 30vh; 
+    }
+    #menu {
+        font-size: 1.2em;
+        height: 20vh;
+    }
+}
+
+@media (max-width: 400px) {
+    #top {
+        font-size: 3vw; 
+    }
+    .showbox {
+        height: 25vh; 
+    }
+    #menu {
+        font-size: 1em;
+        height: 15vh; 
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div id ="container">
+        <div id ="top">Study Log</div>
+        <div id="bottom">What I studied today</div>
+    </div>
+    <div class="showbox">
+        <h1>2024.06.02</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas sunt tempora ullam labore, nostrum recusandae quisquam, rem, ab cum impedit officia nulla facilis. Soluta ab id similique facilis vel!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laboriosam repellendus praesentium assumenda aliquam, adipisci, earum, natus ipsum at sed ratione dolor voluptates qui rerum quidem excepturi? Dolorem, rerum hic?</p>
+        <hr>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam itaque, repellendus quidem tenetur corporis incidunt aut placeat voluptatum deserunt, praesentium, porro quis dolorum aliquid. Reprehenderit debitis saepe exercitationem adipisci quia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo id assumenda possimus aspernatur ratione at doloremque rerum, quod accusamus beatae accusantium, hic non? Doloribus amet dolorem illum accusantium labore!
+        </p>
+        <h1>2024.06.03</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas sunt tempora ullam labore, nostrum recusandae quisquam, rem, ab cum impedit officia nulla facilis. Soluta ab id similique facilis vel!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laboriosam repellendus praesentium assumenda aliquam, adipisci, earum, natus ipsum at sed ratione dolor voluptates qui rerum quidem excepturi? Dolorem, rerum hic?</p>
+        <hr>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam itaque, repellendus quidem tenetur corporis incidunt aut placeat voluptatum deserunt, praesentium, porro quis dolorum aliquid. Reprehenderit debitis saepe exercitationem adipisci quia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo id assumenda possimus aspernatur ratione at doloremque rerum, quod accusamus beatae accusantium, hic non? Doloribus amet dolorem illum accusantium labore!
+        </p>
+            <h1>2024.06.04</h1>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas sunt tempora ullam labore, nostrum recusandae quisquam, rem, ab cum impedit officia nulla facilis. Soluta ab id similique facilis vel!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laboriosam repellendus praesentium assumenda aliquam, adipisci, earum, natus ipsum at sed ratione dolor voluptates qui rerum quidem excepturi? Dolorem, rerum hic?</p>
+        <hr>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam itaque, repellendus quidem tenetur corporis incidunt aut placeat voluptatum deserunt, praesentium, porro quis dolorum aliquid. Reprehenderit debitis saepe exercitationem adipisci quia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo id assumenda possimus aspernatur ratione at doloremque rerum, quod accusamus beatae accusantium, hic non? Doloribus amet dolorem illum accusantium labore!
+        </p>
+            <h1>2024.06.05</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas sunt tempora ullam labore, nostrum recusandae quisquam, rem, ab cum impedit officia nulla facilis. Soluta ab id similique facilis vel!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laboriosam repellendus praesentium assumenda aliquam, adipisci, earum, natus ipsum at sed ratione dolor voluptates qui rerum quidem excepturi? Dolorem, rerum hic?</p>
+            <hr>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam itaque, repellendus quidem tenetur corporis incidunt aut placeat voluptatum deserunt, praesentium, porro quis dolorum aliquid. Reprehenderit debitis saepe exercitationem adipisci quia.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo id assumenda possimus aspernatur ratione at doloremque rerum, quod accusamus beatae accusantium, hic non? Doloribus amet dolorem illum accusantium labore!
+            </p>
+            <h1>2024.06.06</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas sunt tempora ullam labore, nostrum recusandae quisquam, rem, ab cum impedit officia nulla facilis. Soluta ab id similique facilis vel!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laboriosam repellendus praesentium assumenda aliquam, adipisci, earum, natus ipsum at sed ratione dolor voluptates qui rerum quidem excepturi? Dolorem, rerum hic?</p>
+            <hr>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam itaque, repellendus quidem tenetur corporis incidunt aut placeat voluptatum deserunt, praesentium, porro quis dolorum aliquid. Reprehenderit debitis saepe exercitationem adipisci quia.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo id assumenda possimus aspernatur ratione at doloremque rerum, quod accusamus beatae accusantium, hic non? Doloribus amet dolorem illum accusantium labore!
+            </p>
+             <h1>2024.06.07</h1>
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas sunt tempora ullam labore, nostrum recusandae quisquam, rem, ab cum impedit officia nulla facilis. Soluta ab id similique facilis vel!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laboriosam repellendus praesentium assumenda aliquam, adipisci, earum, natus ipsum at sed ratione dolor voluptates qui rerum quidem excepturi? Dolorem, rerum hic?</p>
+            <hr>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam itaque, repellendus quidem tenetur corporis incidunt aut placeat voluptatum deserunt, praesentium, porro quis dolorum aliquid. Reprehenderit debitis saepe exercitationem adipisci quia.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo id assumenda possimus aspernatur ratione at doloremque rerum, quod accusamus beatae accusantium, hic non? Doloribus amet dolorem illum accusantium labore!
+            </p>
+            <h1>2024.06.08</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas sunt tempora ullam labore, nostrum recusandae quisquam, rem, ab cum impedit officia nulla facilis. Soluta ab id similique facilis vel!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laboriosam repellendus praesentium assumenda aliquam, adipisci, earum, natus ipsum at sed ratione dolor voluptates qui rerum quidem excepturi? Dolorem, rerum hic?</p>
+            <hr>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam itaque, repellendus quidem tenetur corporis incidunt aut placeat voluptatum deserunt, praesentium, porro quis dolorum aliquid. Reprehenderit debitis saepe exercitationem adipisci quia.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quo id assumenda possimus aspernatur ratione at doloremque rerum, quod accusamus beatae accusantium, hic non? Doloribus amet dolorem illum accusantium labore!
+            </p>
+         </div>
+        <div id="menu">
+            <a href="main.html">Main</a><br>
+            <a href="edit_mode.html">Edit Mode</a>
+        </div>
+
+    </body>
+</html>
