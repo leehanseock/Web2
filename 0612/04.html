@@ -8,8 +8,8 @@
 <body>
     <script>
         //함수 선언
-        function anonymousCallTen(fun){
-            for (let i =0; i < 10 ; i++){
+        function anonymousCallTen(fun, n){
+            for (let i =0; i < n ; i++){
                 fun(i+1);
             }
         }
@@ -18,7 +18,8 @@
             alert("익명함수 호출됨 " + i);
         }
 
-        anonymousCallTen(fun);
+        let n = prompt("반복할 횟수를 입력하세요.",10);
+        anonymousCallTen(fun, n);
     </script>
 </body>
 </html>
