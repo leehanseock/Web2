@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let p = {
+            name: '최주진',
+            eat : function(food, name){
+                alert(this.name+"은 "+food + "을 먹습니다");
+            }
+        };
+        //p.name=prompt("성명을 입력하세요.", "아무개");
+        let food = prompt("먹고싶은 음식을 입력하세요", "피자");
+        p.eat(food, p.name);
+    </script>
+</body>
+</html>
