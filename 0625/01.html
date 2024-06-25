@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function callbackTest(color){
+            alert("비상! 빨리 컴퓨터를 끄십시오.");
+            document.body.style.backgroundColor = color;
+        }
+        function originalBackgroundColor(color){
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</head>
+<!-- 인라인 모델을 사용한 이벤트 : 요소 안에 직접 이벤트 리스너를 작성-->
+<body>
+    <button onclick="callbackTest('gold')">메시지 호출</button>
+    <button onclick="callbackTest('white')">원래대로</button>
+</body>
+</html>
