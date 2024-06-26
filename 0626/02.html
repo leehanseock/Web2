@@ -6,14 +6,19 @@
     <title>Document</title>
     <!--JQuery library 설정-->
     <script src = "https://code.jquery.com/jquery-latest.min.js"></script>
+    <!--img 요소 객체엣 속성값을 설정-->
     <script>
         $(document).ready(function(){
-            let src =$("script").attr("src");
-            alert(src);
+           $("img").attr("alt","JQuery 속성 설정 연습");
+           $("img").attr("src","imgs/tax.jpg");//상대경로
+           $("img").attr("width","683");
+           $("img").attr("hegiht", "356");
         });
     </script>
 </head>
 <body>
-    
+    <img>
+    <img>
+    <img>
 </body>
 </html>
