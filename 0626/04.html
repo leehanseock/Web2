@@ -11,8 +11,10 @@
         $(document).ready(function(){
            $("img").attr({
             src: "imgs/granpa.jpg",
-            alt: "속성 설정 연습2",
-            width : 306
+            alt: "속성 설정 연습3",
+            width : function(index){
+                return (index + 1) * 150;
+            }
            });
         });
     </script>
