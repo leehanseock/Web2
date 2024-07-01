@@ -103,9 +103,36 @@
         overflow: hidden;
         transform: translate(-50%, -50%);
     }
+    
+    #clock {
+            position : fixed;
+            top: -30px;
+            left: 0;
+            font-family:'CustomFont2', sans-serif;
+            letter-spacing: -1px;
+            /* font-size: 1em; */
+            color:white;
+    }
     </style>
+     <script>
+        function intervalNow(){
+            let now = new Date();
+            let hours = String(now.getHours()).padStart(2, '0');
+            let minutes = String(now.getMinutes()).padStart(2, '0');
+            let seconds = String(now.getSeconds()).padStart(2, '0');
+            obj.innerHTML = `${hours}:${minutes}:${seconds}`;
+        }
+
+        let obj;
+        function makeClock(){
+            obj = document.getElementById("clock");
+            //setInterval 함수에서 메소드명만 쓴다 (주의)
+            setInterval(intervalNow,1000);
+        }
+    </script>
 </head>
-<body>
+<body onload = "makeClock()">
+    <h1 id="clock"></h1>
     <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
     	<source src="./source/unerwater.mp4">
     </video>
