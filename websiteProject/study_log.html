@@ -161,12 +161,12 @@ body{
             let logContainer = document.getElementById("log-container");
             
             // localStorage에서 date와 comment 데이터를 가져옵니다.
-            const date = localStorage.getItem("date");
-            const comment = localStorage.getItem("comment");
+            let date = localStorage.getItem("date");
+            let comment = localStorage.getItem("comment");
 
             // date와 comment가 모두 존재하면 화면에 표시합니다.
             if (date && comment) {
-                const logEntry = document.createElement("div");
+                let logEntry = document.createElement("div");
                 logEntry.innerHTML = `
                     <h2>Date: ${date}</h2>
                     <p>${comment}</p>
